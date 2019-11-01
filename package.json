@@ -1,0 +1,26 @@
+{
+  "name": "react-express-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/server.ts",
+    "build:api": "tsc",
+    "prod": "npm run build:api && node ./dist/app.js",
+    "start": "npm run prod",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.12.4",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
